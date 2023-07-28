@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ysabeau', sans-serif;
+  background-color: #22A699;
+  cursor: pointer;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  background-color: #F29727;
+  color: #060047;
+
+  position: sticky;
+  z-index: 100;
+  /* margin: auto; */
+  padding: 1rem;
+}
+.navbar h1{
+  font-size: 2rem;
+
+}
+.pokeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #98EECC; */
+  background-color: #F29727;
+  /* background-color: #FEFF86; */
+  color: #060047;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 1rem 1rem;
+  /* transform: 1s; */
+  box-shadow: 0px 7px 10px rgb(0, 0, 0);
+  width: 9.8rem;
+}
+
+.pokeCard img {
+  width: 9rem;
+  height: 10rem;
+  padding: 0;
+  margin: 1rem 0rem;
+  animation: mover linear infinite 1.3s alternate;
+}
+@keyframes mover {
+  to{ 
+    transform: translateY(-10px); 
+  }
+}
+
+.pokeCard img,h2,h1{
+  background-color: inherit;
+  color: inherit;
+}
+
+/* .div-whole-left,
+.div-whole-right {
+  flex-basis: 50%;
+} */
+
+.div-whole-left {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.btndiv{
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  background-color: rgba(0, 255, 255, 0);
+  padding: 2rem;
+}
+.btn{
+  padding: 1rem;
+  margin: .5rem;
+  font-size: 1.5rem;
+  background-color: red;
+  color: white;
+  width: 8rem;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 1rem;
+}
+
+
+
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F29727;
+  padding: 2rem;
+  margin: 0;
+}
+.foot div img{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  padding: 0;
+  background-color: inherit;
+}
+.foot div{
+  background-color: inherit;
+  bottom: 0%;
+  /* padding: 2rem; */
+}
+.alink{
+  text-decoration: none;
+  background-color: inherit;
+
+}
+@media screen and (max-width:600px) {
+  .btn{
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    width: 4.7rem;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: .5rem;
+  }
+}
+.loading{
+  height: 80vh;
+  text-align: center;
+}
